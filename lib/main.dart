@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_painter/custom_shape.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,12 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: const MyHomePage(title: 'Flutter Custom Painter'),
-    );
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.red,
+        ),
+        home: const MyHomePage(title: "Flutter Custom Painter"));
   }
 }
 
@@ -34,7 +34,11 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(child: Container()),
+      body: const Center(
+          child: SizedBox(
+              height: double.infinity,
+              width: double.infinity,
+              child: CustomShape())),
     );
   }
 }
