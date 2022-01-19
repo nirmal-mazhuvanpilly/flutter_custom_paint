@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_painter/custom_shape.dart';
+import 'package:flutter_custom_painter/cutom_pie_chart.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.red,
         ),
-        home: const MyHomePage(title: "Flutter Custom Painter"));
+        home: CustomPieChart());
   }
 }
 
