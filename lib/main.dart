@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_painter/custom_shape.dart';
-import 'package:flutter_custom_painter/draw_arc.dart';
+import 'package:flutter_custom_painter/draw_arc_n_draw_color.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.red,
         ),
-        home: DrawArc());
+        home: const DrawColorNCircle());
   }
 }
 
