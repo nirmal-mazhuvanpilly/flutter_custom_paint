@@ -7,8 +7,14 @@ class CustomShape extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomPaint(
-      painter: CurvePainter(Colors.red),
+    return Center(
+      child: SizedBox(
+        height: double.infinity,
+        width: double.infinity,
+        child: CustomPaint(
+          painter: CurvePainter(Colors.red),
+        ),
+      ),
     );
   }
 }
