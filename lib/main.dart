@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_painter/draw_dr_rect.dart';
+import 'package:flutter_custom_painter/ticket_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +14,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.red,
         ),
-        home: const DrawDRRect());
+        home: const TicketUI());
   }
 }
